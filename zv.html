@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ziarat Voucher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #eef1f5;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .voucher-wrapper {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .company-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0d6efd;
+        }
+
+        .voucher-label {
+            background: #0d6efd;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #0d6efd;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .table th {
+            background: #f1f5fb;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #6c757d;
+        }
+
+        .footer {
+            border-top: 1px dashed #ccc;
+            margin-top: 25px;
+            padding-top: 15px;
+            font-size: 13px;
+            text-align: center;
+            color: #777;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .voucher-wrapper {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+        <div class="voucher-wrapper">
+
+            <!-- HEADER -->
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                    <div class="company-name">NOOR UL HARMAIN TRAVEL & TOURS</div>
+                    <div class="text-muted small">
+                        Email: nhtmailsection@gmail.com<br>
+                        Govt Licence / NTN: 3901
+                    </div>
+                </div>
+                <div class="text-end">
+                    <div class="voucher-label">ZIARAT VOUCHER</div>
+                    <div class="mt-2 small">
+                        <strong>Voucher #:</strong> UV-2747<br>
+                        <strong>Date:</strong> 19/12/2025
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- BASIC INFO -->
+            <div class="info-grid">
+                <div class="info-box"><strong>Seats:</strong> 02</div>
+                <div class="info-box"><strong>Ziarat Voucher No:</strong> 3569</div>
+                <div class="info-box"><strong>Adult:</strong> 02</div>
+                <div class="info-box"><strong>Child:</strong> 00</div>
+                <div class="info-box"><strong>Infant:</strong> 01</div>
+            </div>
+
+            <!-- PASSENGERS -->
+            <div class="section">
+                <div class="section-title">👤 Passenger List</div>
+                <table class="table table-bordered text-start align-middle">
+                    <thead>
+                        <tr>
+                            <th width="80">#</th>
+                            <th>Passenger Name</th>
+                            <th>Passport Number</th>
+                            <th>Visa No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Sadia</td>
+                            <td>DG67992</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Shazia</td>
+                            <td>MJ191873</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ali Niaz</td>
+                            <td>PK778640</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MAKKAH ZIARAT -->
+            <div class="section">
+                <div class="section-title">🕋 Makkah Ziarat (For All Passengers)</div>
+                <table class="table table-bordered text-center align-middle">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Ziarat Route</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>03/01/2026</td>
+                            <td>Saturday</td>
+                            <td>Makkah + Jirana</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note">This ziarat is applicable for all passengers mentioned above.</p>
+            </div>
+
+            <!-- MADINAH ZIARAT -->
+            <div class="section">
+                <div class="section-title">🕌 Madinah Ziarat (For All Passengers)</div>
+                <table class="table table-bordered text-center align-middle">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Ziarat Route</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08/01/2026</td>
+                            <td>Thursday</td>
+                            <td>Madinah + Wadi-e-Jinn</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note">This ziarat is applicable for all passengers mentioned above.</p>
+            </div>
+
+            <!-- CONTACTS -->
+            <div class="section">
+                <div class="section-title">📞 Contact Information</div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <strong>Makkah Ziarat Contact</strong><br>
+                        Muhammad Ramzan<br>
+                        +966 595 882733
+                    </div>
+                    <div class="col-md-3">
+                        <strong>Madinah Ziarat Contact</strong><br>
+                        Shahid Sahab<br>
+                        +966 538 015196
+                    </div>
+                    <div class="col-md-3">
+                        <strong>Emergency (KSA)</strong><br>
+                        Masood Bhai: +966 56 513 1668<br>
+                        Malik Waseem: +966 54 009 8170
+                    </div>
+                    <div class="col-md-3">
+                        <strong>Pakistan Branch (Malir)</strong><br>
+                        Sir Haris<br>
+                        +92 334 8784723
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                This is a system generated Ziarat Voucher. No signature required.
+            </div>
+
+        </div>
+
+</body>
+
+</html>
